@@ -1,0 +1,22 @@
+body {
+    background-color: #f3c9c9;
+}
+
+footer {
+    font-size: small;
+    font-style: italic;
+    color: burlywood;
+}
+
+h2 {
+    background-color: bisque;
+    color: #1460AA;
+}
+
+h3 {
+    background-color: bisque;
+}
+
+ul {
+    font-style: italic;
+}
