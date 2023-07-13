@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kurs Co ten Frontend</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Strona główna</a>
+			<a href="nauka-html.html">Nauka HTML</a>
+			<a href="nauka-css.html">Nauka CSS</a>
+			<a href="nauka-js.html">Nauka JavaScript</a>
+		</nav>
+	</header>
+	<main>
+		<header id="top">
+			<h1>Zestaw notatek do kursu co ten frontend</h1>
+		</header>
+		<section>
+			<h2>Ogólnie o frontend - Poziomy budowy strony</h2>
+			<ol>
+				<li>Treść</li>
+				<li>Semantyja HTML</li>
+				<li>Prezentacja CSS</li>
+				<li>Interakcja JavaScript</li>
+			</ol>
+		</section>
+		<section>
+			<h2>HTML</h2>
+			<article>
+				<h3>Budowa strony internetowej HTML</h3>
+				<ul>
+					<li>&lt;head&gt;</li>
+					<li>&lt;body&gt;</li>
+					<li>&lt;main&gt; - zawiera unikalną treść, nie wrzucamy tu header, footer jeśli powtarzają się na
+						innych stronach</li>
+					<li>&lt;section&gt;</li>
+					<li>&lt;article&gt; - treść mogąca istnieć samodzielnie</li>
+					<li>&lt;header&gt;</li>
+					<li>&lt;footer&gt;</li>
+					<li>&lt;h1 - h6 &gt;</li>
+					<li>&lt;p&gt;</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Znaczniki - tagi</h3>
+				<ul>
+					<li>&lt;br&gt; - nowa linia</li>
+					<li>&lt;b&gt; - nie ma dużego znaczenia semantycznego, wyróżnienie z otaczającego tekstu</li>
+					<li>&lt;i&gt; - nie ma dużego znaczenia semantycznego, wyróżnienie z otaczającego tekstu</li>
+					<li>&lt;u&gt; - Kiedyś - stylowanie tekstu przez podkreślenie. Teraz - dodanie "nietekstowej
+						adnotacji" na przykład oznaczenie błędu</li>
+					<li>&lt;strong&gt; - podkreśla wysoką istotność i poważność frazy w nim zawartej</li>
+					<li>&lt;em&gt; - podkreśla, że tekst może mieć inne znaczenie (np. ironia)</li>
+					<li>&lt;a&gt; - linki / łącza wewnątrz dokumentu (&lt;a href="" target=""&gt;opis łącza&lt;/a&gt;)</li>
+					<li>&lt;img&gt; - obrazek o podanym adresie (&lt;img src="" alt=""&gt;)</li>
+					<li>&lt;nav&gt; - nawigacja</li>
+					<li>&lt;&gt;</li>
+					<li>&lt;&gt;</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Atrybuty</h3>
+				<p>
+					Do czego służą atrybuty:
+				<ul>
+					<li>atrybuty są "niewidzialne" - chowamy je w znaczniku</li>
+					<li>nadają elementom dodatkowe właściwości (href, src)</li>
+					<li>pozwalają na grupowanie elementów (class)</li>
+					<li>pozwalają na identyfikowanie elementów (id)</li>
+					<li>można je miksować</li>
+					<li>spis atrybutów "globalnych"</li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">Atrybuty globalne</a></li>
+				</ul>
+				</p>
+				<ul>
+					<li>element</li>
+					<ul>
+						<li>
+							id - identyfikuje element, unikalny na stronie (<element id="moj-identyfikator"></element>)
+						</li>
+					</ul>
+					<li>a</li>
+					<ul>
+						<li>
+							href - link do strony, znacznika na stronie (wtedy jako prefix do id używamy #)
+						</li>
+						<li>
+							target - określa jak / gdzie otworzyć podlinkowany dokument<br>
+							_blank - otwiera połączony dokument w nowym oknie lub nowej karcie<br>
+							_self - otwiera połączony dokument w tej samej ramce, w której został kliknięty (jest to
+							ustawienie domyślne)<br>
+							_parent - otwiera połączony dokument w ramce nadrzędnej<br>
+							_top - otwiera połączony dokument w pełnej treści okna<br>
+							framename - otwiera połączony dokument w nazwanej ramce iframe<br>
+						</li>
+					</ul>
+					<li>src</li>
+					<ul>
+						<li>src - lokalizacja obrazka</li>
+						<li>alt - opis obrazka</li>
+					</ul>
+				</ul>
+			</article>
+		</section>
+		<footer>Strona storzona przez Sebastian Soch <a href="#top">Do góry strony⬆️</a></footer>
+	</main>
+</body>
+
+</html>
