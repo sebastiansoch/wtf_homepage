@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<header id="top">
+	<header>
 		<nav>
 			<a href="index.html">Strona główna</a>
 			<a href="nauka-html.html">Nauka HTML</a>
@@ -22,10 +22,9 @@
 		<header id="top" class="header">
 			<h1>Ogólne notatki</h1>
 		</header>
-		<section class="">
-			<h2>Tips and tricks</h2>
+		<section class="section">
+			<h2 class="section__header">Tips and tricks</h2>
 			<ul class="unordered_list">
-
 				<li>Nazywanie rzeczy
 					<ul>
 						<li>nazwy zapisujemy bez polskich znaków (ąćęłńóśżź)</li>
@@ -34,7 +33,6 @@
 						<li>trzymamy się jednego schematu (konsekwencja jest istotna)</li>
 					</ul>
 				</li>
-
 				<li>Class
 					<ul class="unordered_list--nested">
 						<li>Rekomenduje się dodawać klasy do wszystkich elementów i unikać zagnieżdżeń</li>
@@ -53,6 +51,128 @@
 					</ul>
 				</li>
 			</ul>
+		</section>
+		<section>
+			<h2 class="section__header">Kody odpowiedzi HTTP</h2>
+			<article class="response_codes_classes">
+				<h3 class="article__header">Klasy odpowiedzi HTTP</h3>
+				<p>Lista kodów odpowiedzi HTTP dzieli się na 5 klas:</p>
+				<ul class="unordered_list">
+					<li>100: są to kody informacyjne, żądanie zainicjonowane przez przeglądarkę jest kontynuowane.</li>
+					<li>200: są to kody powodzenia, zwracane są, gdy żądanie zostało pomyślnie odebrane, a następnie
+						przetworzone przez serwer.</li>
+					<li>300: są to kody przekierowań, nowa zawartość została zastąpiona zasobem.</li>
+					<li>400: są to kody błędów klienta, tutaj powiadamiają że istnieje problem z danym żądaniem</li>
+					<li>500: są to kody błedów serwera,żądanie zostało zaakceptowane, ale błąd na serwerze uniemożliwił
+						wykonanie</li>
+				</ul>
+				<p>Klasy odpowiedzi wersja light 🤣</p>
+				<ul class="unordered_list">
+					<li>1xx: hold on</li>
+					<li>2xx: here you go</li>
+					<li>3xx: go away</li>
+					<li>4xx: you fucked up</li>
+					<li>5xx: I fucked up</li>
+				</ul>
+			</article>
+			<article class="response_status_codes">
+				<h3 class="article__header">Lista kodów odpowiedzi</h3>
+				<div>
+					<p>Kody informacyjne</p>
+					<ul class="unordered_list">
+						<li>100 Continue Prośba o dalsze wysyłanie zapytania</li>
+						<li>101 Switching Protocols Zmiana protokołu</li>
+						<li>110 Connection Timed Out Przekroczono czas połączenia. Serwer zbyt długo nie odpowiada.</li>
+						<li>111 Connection refused Serwer odrzucił połączenie</li>
+					</ul>
+				</div>
+				<div>
+					<p>Kody powodzenia</p>
+					<ul class="unordered_list">
+						<li>200 OK Zawartość żądanego dokumentu</li>
+						<li>201 Created Utworzono</li>
+						<li>202 Accepted Przyjęto</li>
+						<li>203 Non-Authoritative Information Zwrócona informacja nie odpowiada dokładnie odpowiedzi
+							pierwotnego serwera, lecz została utworzona z lokalnych bądź zewnętrznych kopii</li>
+						<li>204 No content Serwer nie potrzebuje zwracać żadnej treści</li>
+						<li>205 Reset Content Serwer zrealizował zapytanie i klient powinien przywrócić pierwotny wygląd
+						</li>
+						<li>206 Partial Content Serwer zrealizował tylko część zapytania typu GET</li>
+					</ul>
+				</div>
+				<div>
+					<p>Kody przekierowania</p>
+					<ul class="unordered_list">
+						<li>300 Multiple Choices Istnieje więcej niż jeden sposób obsłużenia danego zapytania</li>
+						<li>301 Moved Permanently Żądany zasób zmienił swój URL i w przyszłości powinien być szukany pod
+							nowym adresem</li>
+						<li>302 Found Żądany zasób jest chwilowo dostępny pod innym adresem</li>
+						<li>303 See Other Odpowiedź na żądanie znajduje się pod innym URL, jest to sposób
+							przekierowywania w odpowiedzi na żądanie metodą POST.</li>
+						<li>304 Not Modified Zawartość zasobu nie podległa zmianie według warunku przekazanego przez
+							klienta</li>
+						<li>305 Use Proxy Użyj serwera proxy</li>
+						<li>306 Switch Proxy Kod nieużywany, ale zastrzeżony dla starszych wersji protokołu</li>
+						<li>307 Temporary Redirect Zasób znajduje się chwilowo pod innym adresem URL</li>
+						<li>310 Too many redirects Zbyt wiele przekierowań.</li>
+					</ul>
+				</div>
+				<div>
+					<p>Kody błędu aplikacji klienta</p>
+					<ul class="unordered_list">
+						<li>400 Bad Request Żądanie nie może być obsłużone przez serwer z powodu nieprawidłowości
+							postrzeganej jako błąd użytkownika</li>
+						<li>401 Unauthorized</li>
+						<li>402 Payment Required</li>
+						<li>403 Forbidden Serwer zrozumiał zapytanie, lecz konfiguracja bezpieczeństwa zabrania mu
+							zwrócić żądany zasób</li>
+						<li>404 Not Found Nie znaleziono – serwer nie odnalazł zasobu</li>
+						<li>405 Method Not Allowed</li>
+						<li>406 Not Acceptable</li>
+						<li>407 Proxy Authentication Required</li>
+						<li>408 Request Timeout</li>
+						<li>409 Conflict</li>
+						<li>410 Gone</li>
+						<li>411 Length required</li>
+						<li>412 Precondition Failed</li>
+						<li>413 Request Entity Too Large</li>
+						<li>414 Request-URI Too Long</li>
+						<li>415 Unsupported Media Type</li>
+						<li>416 Requested Range Not Satisfiable</li>
+						<li>417 Expectation Failed</li>
+						<li>418 I’m a teapot</li>
+						<li>421 Misdirected Request</li>
+						<li>422 Unprocessable entity Zapytanie było poprawnie sformułowane, ale było niemożliwe do
+							kontynuowania z powodu semantycznych błędów.</li>
+						<li>423 Locked (WebDAV)</li>
+						<li>424 Failed Dependency (WebDAV)</li>
+						<li>425 Too Early</li>
+						<li>426 Upgrade Required</li>
+						<li>428 Precondition Required</li>
+						<li>429 Too Many Requests Użytkownik wysłał za wiele żądań w danym czasie.</li>
+						<li>431 Request Header Fields Too Large</li>
+						<li>451 Unavailable For Legal Reasons Zawartość niedostępna z powodów prawnych</li>
+					</ul>
+				</div>
+				<div>
+					<p>Kody błędu serwera HTTP</p>
+					<ul class="unordered_list">
+						<li>500 Internal Server Error Wewnętrzny błąd serwera</li>
+						<li>501 Not Implemented Nie zaimplementowano</li>
+						<li>502 Bad Gateway Błąd bramy – serwer</li>
+						<li>503 Service Unavailable Usługa niedostępna</li>
+						<li>504 Gateway Timeout Przekroczony czas bramy</li>
+						<li>505 HTTP Version Not Supported Nieobsługiwana wersja HTTP</li>
+						<li>506 Variant Also Negotiates</li>
+						<li>507 Insufficient Storage (WebDAV)</li>
+						<li>508 Loop Detected (WebDAV)</li>
+						<li>509 Bandwidth Limit Exceeded Serwer jest tymczasowo niedostępny, ponieważ właściciel strony
+							przekroczył limit transferu danych.</li>
+						<li>510 Not Extended</li>
+						<li>511 Network Authentication Required</li>
+					</ul>
+				</div>
+			</article>
 		</section>
 	</main>
 	<footer>Strona storzona przez Sebastian Soch <a href="#top">Do góry strony⬆️</a></footer>

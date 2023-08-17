@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">7
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kurs Co ten Frontend</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
@@ -29,7 +29,7 @@
 				<h3 class="article__header">Podstawowe informacje</h3>
 				<p>Zapis właściwości <br>
 					selector {<br>
-					właściwość: wartość;<br>
+					&nbsp;&nbsp;właściwość: wartość;<br>
 					}
 				</p>
 				<p>Aby podlinkowac arkusz styli CSS należy w sekcji head umieścić wpis &lt;link href="sciezka do
@@ -78,6 +78,62 @@
 						<td>element</td>
 					</tr>
 				</table>
+			</article>
+			<article class="article">
+				<h3 class="article__header">Dziedziczenie</h3>
+				<p>Zapis dziedziczenia<br>
+					selector {<br>
+					&nbsp;&nbsp;wartość: inherit;<br>
+					}
+				</p>
+				<p>
+					Dziedziczymy z bezpośredniego rodzica.<br>Przykładowo: a { color: inherit; } umożliwi nam
+					odzieciczenie koloru dla linków z elementu nadrzędnego np section zamiast stosowania -webkit-link;
+				</p>
+				<div>
+					<p>
+						Lista dziedziczonych własności CSS
+					</p>
+					<ul>
+						<li>border-collapse</li>
+						<li>border-spacing</li>
+						<li>caption-side</li>
+						<li>color</li>
+						<li>cursor</li>
+						<li>direction</li>
+						<li>empty-cells</li>
+						<li>font-family</li>
+						<li>font-size</li>
+						<li>font-style</li>
+						<li>font-variant</li>
+						<li>font-weight</li>
+						<li>font-size-adjust</li>
+						<li>font-stretch</li>
+						<li>font</li>
+						<li>letter-spacing</li>
+						<li>line-height</li>
+						<li>list-style-image</li>
+						<li>list-style-position</li>
+						<li>list-style-type</li>
+						<li>list-style</li>
+						<li>orphans</li>
+						<li>quotes</li>
+						<li>tab-size</li>
+						<li>text-align</li>
+						<li>text-align-last</li>
+						<li>text-decoration-color</li>
+						<li>text-indent</li>
+						<li>text-justify</li>
+						<li>text-shadow</li>
+						<li>text-transform</li>
+						<li>visibility</li>
+						<li>white-space</li>
+						<li>widows</li>
+						<li>word-break</li>
+						<li>word-spacing</li>
+						<li>word-wrap</li>
+					</ul>
+				</div>
 			</article>
 		</section>
 		<footer>Strona storzona przez Sebastian Soch <a href="#top">Do góry strony⬆️</a></footer>
