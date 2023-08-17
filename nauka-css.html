@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">7
 	<title>Kurs Co ten Frontend</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
@@ -19,14 +19,14 @@
 		</nav>
 	</header>
 	<main>
-		<header id="top">
-			<img src="images/css_logo.png" alt="JavaScript logo">
+		<header id="top" class="header">
+			<img class="header__img" src="images/css_logo.png" alt="JavaScript logo">
 			<h1>CSS</h1>
 		</header>
-		<section>
-			<h2>CSS</h2>
-			<article>
-				<h3>Podstawowe informacje</h3>
+		<section class="section">
+			<h2 class="section__header">CSS</h2>
+			<article class="article">
+				<h3 class="article__header">Podstawowe informacje</h3>
 				<p>Zapis właściwości <br>
 					selector {<br>
 					właściwość: wartość;<br>
@@ -36,33 +36,48 @@
 					pliku.css" rel="stylesheet" type="text/css"&gt;
 				</p>
 			</article>
-			<article>
-				<h3>Selektory i regóły</h3>
-				<ul>
-					<li>#id - # (hash) - selektor id/li>
+			<article class="article">
+				<h3 class="article__header">Selektory i regóły</h3>
+				<ul class="unordered_list">
+					<li>#id - # (hash) - selektor id</li>
 					<li>.class - . (kropka) - selektor klasy</li>
 					<li>element</li>
 					<li>!important - kasuje inne regóły, nadpisuje własności</li>
 				</ul>
 			</article>
-			<article>
-				<h3>Specyficzność</h3>
+			<article class="article">
+				<h3 class="article__header">Specyficzność</h3>
 				<p>
 					Jeśli specyficzność jest równa - pierwszeństwo ma selektor "bliżej" elementu
 				</p>
-				<p>
-					(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ,
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) ,
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ,
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ,
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-					!important&nbsp;&nbsp;&nbsp;&nbsp;style=""&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;element
-				</p>
+				<table class="table__specificity">
+					<tr>
+						<td>(</td>
+						<td>_</td>
+						<td>,</td>
+						<td>_</td>
+						<td>)</td>
+						<td>,</td>
+						<td>_</td>
+						<td>,</td>
+						<td>_</td>
+						<td>,</td>
+						<td>_</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>!important</td>
+						<td></td>
+						<td>style=""</td>
+						<td></td>
+						<td></td>
+						<td>#name</td>
+						<td></td>
+						<td>.name</td>
+						<td></td>
+						<td>element</td>
+					</tr>
+				</table>
 			</article>
 		</section>
 		<footer>Strona storzona przez Sebastian Soch <a href="#top">Do góry strony⬆️</a></footer>

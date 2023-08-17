@@ -19,15 +19,15 @@
 		</nav>
 	</header>
 	<main>
-		<header id="top">
-			<img src="images/html_logo.png" alt="JavaScript logo">
+		<header id="top" class="header">
+			<img class="header__img" src="images/html_logo.png" alt="JavaScript logo">
 			<h1>HTML</h1>
 		</header>
-		<section>
-			<h2>HTML - budowa, tagi i atrybuty</h2>
-			<article>
-				<h3>Budowa strony internetowej HTML</h3>
-				<ul>
+		<section class="section">
+			<h2 class="section__header">HTML - budowa, tagi i atrybuty</h2>
+			<article class="article">
+				<h3 class="article__header">Budowa strony internetowej HTML</h3>
+				<ul class="unordered_list">
 					<li>&lt;head&gt;</li>
 					<li>&lt;body&gt;</li>
 					<li>&lt;main&gt; - zawiera unikalną treść, nie wrzucamy tu header, footer jeśli powtarzają się na
@@ -40,9 +40,9 @@
 					<li>&lt;p&gt;</li>
 				</ul>
 			</article>
-			<article>
-				<h3>Znaczniki - tagi</h3>
-				<ul>
+			<article class="article">
+				<h3 class="article__header">Znaczniki - tagi</h3>
+				<ul class="unordered_list">
 					<li>&lt;br&gt; - nowa linia</li>
 					<li>&lt;b&gt; - nie ma dużego znaczenia semantycznego, wyróżnienie z otaczającego tekstu</li>
 					<li>&lt;i&gt; - nie ma dużego znaczenia semantycznego, wyróżnienie z otaczającego tekstu</li>
@@ -58,11 +58,11 @@
 					<li>&lt;&gt;</li>
 				</ul>
 			</article>
-			<article>
-				<h3>Atrybuty</h3>
+			<article class="article">
+				<h3 class="article__header">Atrybuty</h3>
 				<p>
 					Do czego służą atrybuty:</p>
-				<ul>
+				<ul class="unordered_list">
 					<li>atrybuty są "niewidzialne" - chowamy je w znaczniku</li>
 					<li>nadają elementom dodatkowe właściwości (href, src)</li>
 					<li>pozwalają na grupowanie elementów (class)</li>
@@ -73,9 +73,9 @@
 							globalne</a></li>
 				</ul>
 
-				<ul>
+				<ul class="unordered_list">
 					<li>element
-						<ul>
+						<ul class="unordered_list--nested">
 							<li>style - styl przy znaczniku, styl inline. (&lt;znacznik
 								style=”color:yellow;”&gt;treść&lt;/znacznik&gt;)</li>
 							<li>class - dodanie klasy do elementu (&lt;znacznik
@@ -86,7 +86,7 @@
 					</li>
 
 					<li>a
-						<ul>
+						<ul class="unordered_list--nested">
 							<li>
 								href - link do strony, znacznika na stronie (wtedy jako prefix do id używamy #)
 							</li>
@@ -102,13 +102,11 @@
 						</ul>
 					</li>
 					<li>src
-						<ul>
+						<ul class="unordered_list--nested">
 							<li>src - lokalizacja obrazka</li>
 							<li>alt - opis obrazka</li>
 						</ul>
 					</li>
-
-
 				</ul>
 			</article>
 		</section>
