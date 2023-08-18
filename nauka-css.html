@@ -134,6 +134,29 @@
 					<li>word-wrap</li>
 				</ul>
 			</article>
+			<article class="article">
+				<h3 class="article__header">Box model</h3>
+				<img class="box_model__img" src="/images/box_model.png" alt="box model" />
+				<p>Box model składa się z elementu, paddingu (marginesu wewnętrznego), border (ramki), margin (marginesu
+					zewnętrznego)<br>Skrócony zapis wielkości:</p>
+				<ul class="unordered_list">
+					<li>padding: top right bottom left;</li>
+					<li>border: width style color;
+						<ul class="unordered_list--nested">
+							<li>border-radius -zaokrąglanie nalożników, nie wymaga zdefiniuowania border</li>
+						</ul>
+					</li>
+					<li>margin: top right bottom left;
+						<ul class="unordered_list--nested">
+							<li>margin: __px auto; -wyśrodkowanie elementów w rodzicu</li>
+						</ul>
+					</li>
+				</ul>
+				<p>Sposób ustalania wielkości elemetu definiujemy przy pomocy własności box-sizing. Pzyjmuje ona dwie
+					wartości content-box oraz border-box. Dla <i>box-sizing: content-box</i> zmiana wielkości paddingu
+					oraz border wpływa na zmianę całego boxu, natomiast <i>box-sizing: border-box;</i> przy analogicznej
+					zmianie nie zmienia wielkości boxu a wielkość pola z zawartością</p>
+			</article>
 		</section>
 		<section class="section">
 			<h2 class="section__header">Stylowanie</h2>
@@ -175,6 +198,36 @@
 					<li></li>
 					<li>em</li>
 					<li>rem</li>
+				</ul>
+			</article>
+			<article class="article">
+				<h3 class="article__header">Pozycjonowanie elementów</h3>
+				<ul class="unordered_list">
+					<li>position: static; -element jest umieszczony zgodnie z normalnym przepływem dokumentu.
+						Właściwości top, right, bottom, left i z-index nie mają wpływu. To jest wartość domyślna.</li>
+					<li>position: relative; -element jest umieszczany zgodnie z normalnym przepływem dokumentu, a
+						następnie przesuwany względem siebie na podstawie wartości top, right, bottom, left.
+						Przesunięcie nie wpływa na położenie innych elementów.</li>
+					<li>position: absolute; -element jest usuwany z normalnego obiegu dokumentów i nie jest tworzone
+						miejsce dla elementu w układzie strony. Element jest pozycjonowany względem najbliższego
+						pozycjonowanego przodka (jeśli istnieje) lub początkowego bloku zawierającego. Jego ostateczna
+						pozycja jest określana przez wartości top, right, bottom i left.</li>
+					<li>position: fixed; -element jest usuwany z normalnego obiegu dokumentów i nie jest tworzone
+						miejsce dla elementu w układzie strony. Element jest umieszczony względem początkowego bloku
+						zawierającego, którym jest viewport w przypadku mediów wizualnych. Jego ostateczna pozycja jest
+						określana przez wartości top, right, bottom i left.</li>
+					<li>position: sticky; -element jest pozycjonowany zgodnie z normalnym przepływem dokumentu, a
+						następnie przesunięty względem najbliższego przewijanego przodka i zawierającego blok
+						(najbliższy przodek na poziomie bloku), w tym elementy związane z tabelą, w oparciu o wartości
+						top, right, bottom, i left. Przesunięcie nie wpływa na położenie innych elementów.</li>
+					<li>float - element umieszczany jest po lewej lub prawej stronie jego kontenera, umożliwiając
+						zawijanie tekstu i elementów śródliniowych wokół niego. Element jest usuwany z normalnego
+						przepływu strony, ale nadal pozostaje częścią przepływu (w przeciwieństwie do pozycjonowania
+						absolute).</li>
+					<li>clear - określa, czy element musi zostać przeniesiony poniżej (cleared) elementów typu float,
+						które go poprzedzają. Właściwość clear dotyczy elementów pływających i niepływających.
+					</li>
+					<li>z-index -ustawia element na wybranej warstwie</li>
 				</ul>
 			</article>
 		</section>
