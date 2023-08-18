@@ -24,9 +24,9 @@
 			<h1>CSS</h1>
 		</header>
 		<section class="section">
-			<h2 class="section__header">CSS</h2>
+			<h2 class="section__header">CSS - informacje podstawowe</h2>
 			<article class="article">
-				<h3 class="article__header">Podstawowe informacje</h3>
+				<h3 class="article__header">CSS - gramatyka</h3>
 				<p>Zapis właściwości <br>
 					selector {<br>
 					&nbsp;&nbsp;właściwość: wartość;<br>
@@ -50,7 +50,7 @@
 				<p>
 					Jeśli specyficzność jest równa - pierwszeństwo ma selektor "bliżej" elementu
 				</p>
-				<table class="table__specificity">
+				<table class="specificity__table">
 					<tr>
 						<td>(</td>
 						<td>_</td>
@@ -90,50 +90,92 @@
 					Dziedziczymy z bezpośredniego rodzica.<br>Przykładowo: a { color: inherit; } umożliwi nam
 					odzieciczenie koloru dla linków z elementu nadrzędnego np section zamiast stosowania -webkit-link;
 				</p>
-				<div>
-					<p>
-						Lista dziedziczonych własności CSS
-					</p>
-					<ul>
-						<li>border-collapse</li>
-						<li>border-spacing</li>
-						<li>caption-side</li>
-						<li>color</li>
-						<li>cursor</li>
-						<li>direction</li>
-						<li>empty-cells</li>
-						<li>font-family</li>
-						<li>font-size</li>
-						<li>font-style</li>
-						<li>font-variant</li>
-						<li>font-weight</li>
-						<li>font-size-adjust</li>
-						<li>font-stretch</li>
-						<li>font</li>
-						<li>letter-spacing</li>
-						<li>line-height</li>
-						<li>list-style-image</li>
-						<li>list-style-position</li>
-						<li>list-style-type</li>
-						<li>list-style</li>
-						<li>orphans</li>
-						<li>quotes</li>
-						<li>tab-size</li>
-						<li>text-align</li>
-						<li>text-align-last</li>
-						<li>text-decoration-color</li>
-						<li>text-indent</li>
-						<li>text-justify</li>
-						<li>text-shadow</li>
-						<li>text-transform</li>
-						<li>visibility</li>
-						<li>white-space</li>
-						<li>widows</li>
-						<li>word-break</li>
-						<li>word-spacing</li>
-						<li>word-wrap</li>
-					</ul>
-				</div>
+
+				<p>
+					Lista dziedziczonych własności CSS
+				</p>
+				<ul>
+					<li>border-collapse</li>
+					<li>border-spacing</li>
+					<li>caption-side</li>
+					<li>color</li>
+					<li>cursor</li>
+					<li>direction</li>
+					<li>empty-cells</li>
+					<li>font-family</li>
+					<li>font-size</li>
+					<li>font-style</li>
+					<li>font-variant</li>
+					<li>font-weight</li>
+					<li>font-size-adjust</li>
+					<li>font-stretch</li>
+					<li>font</li>
+					<li>letter-spacing</li>
+					<li>line-height</li>
+					<li>list-style-image</li>
+					<li>list-style-position</li>
+					<li>list-style-type</li>
+					<li>list-style</li>
+					<li>orphans</li>
+					<li>quotes</li>
+					<li>tab-size</li>
+					<li>text-align</li>
+					<li>text-align-last</li>
+					<li>text-decoration-color</li>
+					<li>text-indent</li>
+					<li>text-justify</li>
+					<li>text-shadow</li>
+					<li>text-transform</li>
+					<li>visibility</li>
+					<li>white-space</li>
+					<li>widows</li>
+					<li>word-break</li>
+					<li>word-spacing</li>
+					<li>word-wrap</li>
+				</ul>
+			</article>
+		</section>
+		<section class="section">
+			<h2 class="section__header">Stylowanie</h2>
+			<article class="article">
+				<h3 class="article__header">Wyświetlanie elementów</h3>
+				<p>Do sterowania wyswietlaniem wykorzystujemy własność <i>display</i></p>
+				<ul class="unordered_list">
+					<li>display: inline</li>
+					<li>display: block</li>
+					<li>display: inline-block</li>
+				</ul>
+				<p>Ustalenie rozmiaru elementu</p>
+				<ul class="unordered_list">
+					<li>width</li>
+					<li>max-width</li>
+					<li>min-width</li>
+					<li>height</li>
+					<li>max-height</li>
+					<li>min-height</li>
+				</ul>
+				<p>Obsługa "nadmiarowego kontentu" przy pomocy właściwości overflow</p>
+				<ul class="unordered_list">
+					<li>overflow: visible</li>
+					<li>overflow: hidden</li>
+					<li>overflow: clip -ile zawartość elemetu może wystawac poza body - sterujemy przy pomocy
+						overflow-clip-margin</li>
+					<li>overflow: scroll</li>
+					<li>overflow: auto</li>
+					<li>overflow: </li>
+				</ul>
+			</article>
+			<article class="article">
+				<h3 class="article__header">Jednostki</h3>
+				<ul>
+					<li>px</li>
+					<li>% -procent z "rozmiaru" rodzica</li>
+					<li>vw -viewport width -procent z widocznego rozmiaru "okna przeglądarki"</li>
+					<li>vh -viewport height -procent z widocznego rozmiaru "okna przeglądarki"</li>
+					<li></li>
+					<li>em</li>
+					<li>rem</li>
+				</ul>
 			</article>
 		</section>
 		<footer>Strona storzona przez Sebastian Soch <a href="#top">Do góry strony⬆️</a></footer>
